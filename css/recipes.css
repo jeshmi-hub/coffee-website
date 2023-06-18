@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Saira:wght@100&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --color: #CC9759;
+}
+
+*{
+    font-family: 'Baloo', 'Saira';
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+.container-flex{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 50%;
+    height: 600px;
+    background: url('../images/pexels-di-bella-coffee-1233528.jpg') no-repeat center/ cover;
+    border-radius: 8px;
+}
+
+.right{
+    width: 50%;
+    min-height: 400px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: -150px;
+}
+
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 1.5rem;
+}
+
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #CC9759;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+.right a:hover{
+    background-color: #13131a;
+}
+
+.left1{
+    width: 50%;
+    height: 600px;
+    background: url('../images/istockphoto-1164685466-612x612.jpg') no-repeat center/ cover;
+    border-radius: 8px;
+}
+
+.left2{
+    width: 50%;
+    height: 600px;
+    background: url('../images/istockphoto-504401173-612x612.jpg') no-repeat center/ cover;
+    border-radius: 8px;
+}
+
+.left3{
+    width: 50%;
+    height: 600px;
+    background: url('../images/pexels-photo-433145.jpeg') no-repeat center/ cover;
+    border-radius: 8px;
+}
+
+.left4{
+    width: 50%;
+    height: 600px;
+    background: url('../images/pexels-photo-4916561.webp') no-repeat center/ cover;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+
+
+}
+
+
+
+@media (max-width:768px){
+
+
+    .container-flex{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+        
+    }
+    
+    .left{
+        width: 100%;
+        height: 400px;
+    }
+    .left1{
+        width: 100%;
+        height: 400px;
+    }
+
+    .left2{
+        width:100%;
+        height: 400px;
+    }
+
+    .left3{
+        width:100%;
+        height: 400px;
+
+    }
+
+    
+    .left4{
+        width:100%;
+        height: 400px;
+
+    }
+    
+    .right{
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+
+      
+
+}

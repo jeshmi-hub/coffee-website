@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Saira:wght@100&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --color: #CC9759;
+}
+
+
+body{
+    background: var(--bg);
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+
+.cards{
+    margin: 100px auto;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+    font-family:'Baloo';   
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(255,255,255,.3);
+}
+
+.card__image{
+    width: 100%;
+    display: block;
+}
+
+.card__content{
+    line-height:  1.5;
+    font-size: 1.5rem;
+    padding: 15px;
+    background: #CC9759; 
+}
+
+.card__content h1{
+    margin-top: 0;
+}
+
+.card__content p{
+    margin-bottom: 0;
+}
+
+.card__info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #cccc;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ccc;
+}
+
+.card__info a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card__info a:hover{
+    color: #010103;
+    text-decoration: underline;
+}
